@@ -1,0 +1,9 @@
+[submodule "oh-my-fish"]
+	path = oh-my-fish
+	url = https://github.com/bpinto/oh-my-fish.git
+[submodule "tmux-powerline"]
+	path = tmux-powerline
+	url = https://github.com/liruizhe/tmux-powerline
+[submodule "powerline"]
+	path = powerline
+	url = https://github.com/Lokaltog/powerline.git
