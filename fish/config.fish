@@ -13,3 +13,7 @@ set fish_theme bobthefish
 
 # Load oh-my-fish configuration.
 . $fish_path/oh-my-fish.fish
+
+if test -f $HOME/.bashrc
+	shsource --bash $HOME/.bashrc
+end
