@@ -47,8 +47,8 @@ function shsource --description 'Source sh/csh file'
     if test "$ext"
                 eval "exec $exe -c '$source $argv; exec fish'"
     else
-        set -l f1 (mktemp)
-        set -l f2 (mktemp)
+        set -l f1 (mktemp tmp.XXXXXXXXXX)
+        set -l f2 (mktemp tmp.XXXXXXXXXX)
         eval $exe -c "'env | sort > $f1; $source $argv; env | sort > $f2'"
 
         set -l filter "(^[^\+-]|^\+\+\+|^---|^[\+-]_|^[\+-]PIPESTATUS|^[\+-]COLUMNS)"
