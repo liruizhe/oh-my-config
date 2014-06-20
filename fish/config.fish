@@ -15,5 +15,5 @@ set fish_theme bobthefish
 . $fish_path/oh-my-fish.fish
 
 if test -f $HOME/.bashrc
-	shsource --bash $HOME/.bashrc
+	source_script --bash $HOME/.bashrc
 end
